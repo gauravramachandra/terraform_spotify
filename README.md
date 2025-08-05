@@ -6,7 +6,9 @@
 > - Explicit IPv4 or IPv6 loopback addresses like `http://127.0.0.1:PORT` or `http://[::1]:PORT`
 > - `localhost` is explicitly **not allowed**
 >
-> This project was designed for local development but cannot function under the current Spotify API restrictions. Consider using a hosted solution or HTTPS-enabled local development environment or new provider.
+> This project was designed for local development but cannot function under the current Spotify API restrictions. Consider using a hosted solution, an HTTPS-enabled local development environment, or a new provider.
+>
+> **Tip:** You may be able to work around this by setting up an HTTPS reverse proxy (for example, using Nginx) to generate a self-signed SSL certificate. This would allow you to use `https://localhost` as your redirect URI, which might satisfy Spotify's requirements. See the Nginx documentation for guidance.
 
 This project demonstrates how to manage Spotify playlists and tracks using Terraform with the Spotify provider. It creates multiple playlists with tracks from various artists.
 
